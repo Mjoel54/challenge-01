@@ -1,0 +1,54 @@
+/* 
+air force blue: #628395
+beaver: #966897B
+Oxford Blue: #02182B
+buff: CF995F
+*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.nav-bar {
+  position: fixed;
+}
+
+.text-center {
+  text-align: center;
+}
+
+nav {
+  background-color: #02182b;
+  top: 0px;
+}
+
+ul {
+  padding: 20px;
+  text-align: right;
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+  margin: 0 20px;
+}
+
+a {
+  color: #fff;
+}
+
+main {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px;
+}
+
+img {
+  height: 300px;
+}
