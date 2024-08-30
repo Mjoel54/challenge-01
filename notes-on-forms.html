@@ -63,6 +63,8 @@
     >
       <ul>
         <li>
+          <!-- The input's id attribute must match the label's for attribute. This helps screen reader and other assitive technologies know which label belongs to which input -->
+
           <label for="name">Name:</label>
           <input
             type="text"
@@ -70,6 +72,7 @@
             name="user-name"
             placeholder="First name"
           />
+          <!-- the name attribute is will label the data when it is sent to the server -->
         </li>
         <li>
           <label for="email">Email:</label>
@@ -79,10 +82,73 @@
             name="user-email"
             placeholder="name@example.com"
           />
+          <!-- The browser may have email validation tech to verify if the user enters an email with an @. On mobile devices it shifts to using a keyboard that includes the @ and . symbols -->
         </li>
         <li>
-          <label for="message">Message</label>
-          <textarea id="message"></textarea>
+          <label for="number">Number:</label>
+          <input type="number" id="number" name="user-number" />
+        </li>
+        <li>
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="user-date" />
+        </li>
+        <li>
+          <label for="time">Time:</label>
+          <input type="time" id="time" name="user-time" />
+        </li>
+        <li>
+          <label for="phone">Contact Number:</label>
+          <input type="tel" id="phone" name="user-contact-number" />
+        </li>
+        <li>
+          <label for="poem">Write a poem?</label>
+          <textarea id="poem"></textarea>
+        </li>
+        <li>
+          <label for="color">Colour</label>
+          <input type="color" id="color" name="color" />
+        </li>
+        <li>
+          <label for="resume">Upload your resume</label>
+          <input type="file" id="resume" name="resume" />
+        </li>
+        <li>
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" />
+        </li>
+        <input type="hidden" value="1234" name="tracking" />
+        <li>
+          <input type="range" min="1" max="5" step="1" />
+        </li>
+        <li>
+          <label for="search">Search</label>
+          <input type="search" id="search" name="search" />
+        </li>
+      </ul>
+      <fieldset>
+        <legend>What is your favourite colour?</legend>
+        <ul>
+          <li>
+            <label for="blue">Blue</label>
+            <input type="radio" name="favcolor" value="blue" id="blue" />
+          </li>
+          <li>
+            <label for="red">Red</label>
+            <input type="radio" name="favcolor" value="red" id="red" />
+          </li>
+          <li>
+            <label for="green">Green</label>
+            <input type="radio" name="favcolor" value="green" id="green" />
+          </li>
+        </ul>
+      </fieldset>
+      <ul>
+        <li>
+          <label for="pizza">What is your favourite pizza?</label>
+          <select id="pizza" name="pizza">
+            <option value="pepperoni">Pepperoni</option>
+            <option value="meatlovers">Meatlovers</option>
+          </select>
         </li>
       </ul>
       <button type="submit">Submit</button>
