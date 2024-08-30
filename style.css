@@ -1,54 +1,125 @@
-/* 
-air force blue: #628395
-beaver: #966897B
-Oxford Blue: #02182B
-buff: CF995F
-*/
-
+/* ----- CSS Reset ----- */
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
 
+/* ----- Layout ----- */
 .nav-bar {
-  position: fixed;
+  position: absolute;
+  top: 0px;
+  border-bottom: solid 5px #fefae0;
+}
+
+form {
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 0 auto 20px auto;
+  padding: 20px;
+  border: solid 2px #5f6f65;
+}
+
+figure {
+  padding-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.padding {
+  padding: 20px;
+}
+
+img {
+  height: 300px;
+}
+
+form ul li {
+  text-align: center;
+  padding: 15px;
+  display: block;
+}
+
+button {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid;
+}
+
+/* I wrote this CSS a long time ago for the LMS I look after for work */
+button:hover {
+  opacity: 95%;
+  filter: brightness(1.1);
+  -webkit-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  transform: scale(1.02);
+  transition: 0s ease;
+  cursor: pointer;
+}
+
+/* ----- Text Styling ----- */
+.heading-font {
+  font-family: "Noto Sans Tamil", sans-serif;
+  margin: 20px;
+  font-weight: 900;
+}
+
+.body-font {
+  font-family: "Open Sans", sans-serif;
 }
 
 .text-center {
   text-align: center;
 }
 
-nav {
-  background-color: #02182b;
-  top: 0px;
-}
-
-ul {
-  padding: 20px;
+.text-right {
   text-align: right;
-  list-style-type: none;
 }
 
-li {
-  display: inline;
-  margin: 0 20px;
+/* ----- Colour Schemes ----- */
+.light-color {
+  background-color: #fefae0;
 }
 
-a {
-  color: #fff;
+.medium-color {
+  background-color: #c9dabf;
 }
 
-main {
-  text-align: center;
-  padding: 20px;
+.dark-color {
+  background-color: #5f6f65;
+  color: #fefae0;
 }
 
-h1 {
-  text-align: center;
-  margin: 20px;
+.dark-color a {
+  color: #fefae0;
 }
 
-img {
-  height: 300px;
+/* ----- Form Styling ----- */
+input,
+button,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  padding: 4px;
+}
+
+input,
+textarea {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#contact-me-form label {
+  display: block;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 5px;
 }
