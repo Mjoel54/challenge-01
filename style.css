@@ -3,32 +3,32 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family: "Noto Sans Tamil", sans-serif;
 }
 
 /* ----- Layout ----- */
-.nav-bar {
-  position: absolute;
-  top: 0px;
-  border-bottom: solid 5px #fefae0;
+header {
+  position: fixed;
+  width: 100%;
 }
 
-form {
-  border-radius: 10px;
-  max-width: 500px;
-  margin: 0 auto 20px auto;
-  padding: 20px;
-  border: solid 2px #5f6f65;
+h1 {
+  padding-top: 50px;
 }
 
 figure {
   padding-bottom: 20px;
 }
 
+figcaption {
+  font-size: 8px;
+}
+
 ul {
   list-style-type: none;
 }
 
-li {
+header li {
   display: inline;
   margin: 0 10px;
 }
@@ -38,41 +38,13 @@ li {
 }
 
 img {
-  height: 300px;
-}
-
-form ul li {
-  text-align: center;
-  padding: 15px;
-  display: block;
-}
-
-button {
-  padding: 5px;
-  border-radius: 5px;
-  border: 1px solid;
-}
-
-/* I wrote this CSS a long time ago for the LMS I look after for work */
-button:hover {
-  opacity: 95%;
-  filter: brightness(1.1);
-  -webkit-transform: scale(1.02);
-  -ms-transform: scale(1.02);
-  transform: scale(1.02);
-  transition: 0s ease;
-  cursor: pointer;
+  height: 270px;
 }
 
 /* ----- Text Styling ----- */
 .heading-font {
-  font-family: "Noto Sans Tamil", sans-serif;
   margin: 20px;
   font-weight: 900;
-}
-
-.body-font {
-  font-family: "Open Sans", sans-serif;
 }
 
 .text-center {
@@ -83,43 +55,79 @@ button:hover {
   text-align: right;
 }
 
+.dark-text {
+  color: #00303f;
+}
+
+.light-text {
+  color: #d4cdc3;
+}
+
 /* ----- Colour Schemes ----- */
 .light-color {
-  background-color: #fefae0;
+  background-color: #d4cdc3;
 }
 
 .medium-color {
-  background-color: #c9dabf;
+  background-color: #508991;
 }
 
 .dark-color {
-  background-color: #5f6f65;
-  color: #fefae0;
+  background-color: #00303f;
 }
 
 .dark-color a {
-  color: #fefae0;
+  color: #d4cdc3;
 }
 
 /* ----- Form Styling ----- */
-input,
-button,
-textarea {
-  font-family: inherit;
-  font-size: 100%;
-  padding: 4px;
-}
-
-input,
-textarea {
-  width: 100%;
-  -webkit-box-sizing: border-box;
+#contact-form {
+  background-color: #efac7f;
+  border-radius: 20px;
+  max-width: 500px;
+  margin: 0 auto 20px auto;
+  padding: 20px;
+  border: solid 2.5px #00303f;
+  -webkit-box-sizing: border-box; /* This is to help with compatibility with older browsers */
   box-sizing: border-box;
+  font-family: inherit;
 }
 
-#contact-me-form label {
+form ul li {
+  padding: 15px;
+  display: block;
+}
+
+#contact-form label {
   display: block;
   width: 100%;
   text-align: left;
   margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  font-size: 100%;
+  padding: 4px;
+  width: 100%;
+}
+
+button[type="submit"] {
+  /* Testing my use of attribute selectors */
+  color: #fff;
+  background-color: #00303f;
+  padding: 5px 15px;
+  border-radius: 7.5px;
+}
+
+/* I wrote this CSS a long time ago for the LMS I use at work */
+button:hover {
+  opacity: 95%;
+  filter: brightness(1.1);
+  -webkit-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  transform: scale(1.02);
+  transition: 0s ease;
+  cursor: pointer;
 }

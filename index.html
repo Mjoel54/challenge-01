@@ -3,16 +3,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" type="text/css" href="./style.css" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
-    rel="stylesheet"
-  />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-    rel="stylesheet"
-  />
   <link
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
     rel="stylesheet"
@@ -21,24 +14,28 @@
   <title>My Website</title>
 </head>
 <body>
-  <header class="text-center dark-color padding body-font">
+  <header class="text-center dark-color padding">
     <nav>
       <ul class="text-right">
-        <li><a href="#">Github</a></li>
+        <li>
+          <a href="https://github.com/Mjoel54/challenge-01" target="_self"
+            >Github</a
+          >
+        </li>
         <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#contact-form">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <main class="medium-color text-center padding">
-    <h1 class="heading-font">My first website</h1>
-    <figure class="body-font">
+  <main class="light-color text-center padding dark-text">
+    <h1 class="heading-font">My First Website</h1>
+    <figure class="dark-text">
       <img
         src="./assets/huma-kabakci-oRk4Ep65tRc-unsplash (1).jpg"
-        alt="coming soon text on a shiny black tiled wall"
+        alt="The text, 'coming soon' on a shiny black tiled wall"
       />
-      <figcaption>
+      <figcaption class="dark-text">
         Photo by
         <a
           href="https://unsplash.com/@humakabakci?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
@@ -53,43 +50,33 @@
     </figure>
   </main>
 
-  <section class="text-center light-color padding">
+  <section class="text-center medium-color padding">
     <h2 class="heading-font">Contact Me</h2>
-    <form
-      id="contact-me-form"
-      class="body-font medium-color"
-      method="post"
-      action=""
-    >
+    <form id="contact-form" class="medium-color" method="post" action="">
       <ul>
         <li>
-          <label for="name">Name:</label>
+          <label class="dark-text" for="name">Name:</label>
           <input
             type="text"
             id="name"
             name="user-name"
-            placeholder="First name"
+            placeholder="Full name"
           />
         </li>
         <li>
-          <label for="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            name="user-email"
-            placeholder="name@example.com"
-          />
+          <label class="dark-text" for="email">Email:</label>
+          <input type="email" id="email" name="user-email" />
         </li>
         <li>
-          <label for="message">Message</label>
+          <label class="dark-text" for="message">Message</label>
           <textarea id="message"></textarea>
         </li>
       </ul>
-      <button type="submit">Submit</button>
+      <button type="submit">Send</button>
     </form>
   </section>
 
-  <footer class="text-center dark-color padding body-font">
+  <footer class="text-center dark-color padding light-text">
     <p>@ 2024 Klein Productions</p>
   </footer>
 </body>
